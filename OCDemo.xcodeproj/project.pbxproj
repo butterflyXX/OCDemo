@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		68899979A6AEEA7B477B9F9B /* Pods_OCDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D97AA605186DADF20EB9C9E /* Pods_OCDemo.framework */; };
+		719CC1172B971F86002B408C /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 719CC1162B971F85002B408C /* Person.m */; };
+		719CC11D2B981183002B408C /* LXCKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 719CC11C2B981183002B408C /* LXCKVO.m */; };
+		719CC1202B9811E0002B408C /* LXCObservationInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 719CC11F2B9811E0002B408C /* LXCObservationInfo.m */; };
+		71A174D42B998B2D0019EB08 /* KVOBlockTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A174D32B998B2D0019EB08 /* KVOBlockTestViewController.m */; };
 		71ABEA202B95BA51005279AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ABEA1F2B95BA51005279AA /* AppDelegate.m */; };
 		71ABEA232B95BA51005279AA /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ABEA222B95BA51005279AA /* SceneDelegate.m */; };
 		71ABEA262B95BA51005279AA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ABEA252B95BA51005279AA /* ViewController.m */; };
@@ -17,6 +22,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6D97AA605186DADF20EB9C9E /* Pods_OCDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		719CC1152B971F85002B408C /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		719CC1162B971F85002B408C /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		719CC11B2B981183002B408C /* LXCKVO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXCKVO.h; sourceTree = "<group>"; };
+		719CC11C2B981183002B408C /* LXCKVO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXCKVO.m; sourceTree = "<group>"; };
+		719CC11E2B9811E0002B408C /* LXCObservationInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXCObservationInfo.h; sourceTree = "<group>"; };
+		719CC11F2B9811E0002B408C /* LXCObservationInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXCObservationInfo.m; sourceTree = "<group>"; };
+		71A174D22B998B2D0019EB08 /* KVOBlockTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOBlockTestViewController.h; sourceTree = "<group>"; };
+		71A174D32B998B2D0019EB08 /* KVOBlockTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOBlockTestViewController.m; sourceTree = "<group>"; };
 		71ABEA1B2B95BA51005279AA /* OCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71ABEA1E2B95BA51005279AA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		71ABEA1F2B95BA51005279AA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +43,8 @@
 		71ABEA2D2B95BA54005279AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71ABEA2F2B95BA54005279AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71ABEA302B95BA54005279AA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8BF9251CE92E9D0B29F6E0EB /* Pods-OCDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCDemo.release.xcconfig"; path = "Target Support Files/Pods-OCDemo/Pods-OCDemo.release.xcconfig"; sourceTree = "<group>"; };
+		9A6DD651096D0445A4B2CDAB /* Pods-OCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCDemo.debug.xcconfig"; path = "Target Support Files/Pods-OCDemo/Pods-OCDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +52,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68899979A6AEEA7B477B9F9B /* Pods_OCDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D3BE7F364B624CE67C0B950 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9A6DD651096D0445A4B2CDAB /* Pods-OCDemo.debug.xcconfig */,
+				8BF9251CE92E9D0B29F6E0EB /* Pods-OCDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		71ABEA122B95BA51005279AA = {
 			isa = PBXGroup;
 			children = (
 				71ABEA1D2B95BA51005279AA /* OCDemo */,
 				71ABEA1C2B95BA51005279AA /* Products */,
+				4D3BE7F364B624CE67C0B950 /* Pods */,
+				F89290BCF6F16EE754351C72 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +95,14 @@
 				71ABEA222B95BA51005279AA /* SceneDelegate.m */,
 				71ABEA242B95BA51005279AA /* ViewController.h */,
 				71ABEA252B95BA51005279AA /* ViewController.m */,
+				71A174D22B998B2D0019EB08 /* KVOBlockTestViewController.h */,
+				71A174D32B998B2D0019EB08 /* KVOBlockTestViewController.m */,
+				719CC1152B971F85002B408C /* Person.h */,
+				719CC1162B971F85002B408C /* Person.m */,
+				719CC11B2B981183002B408C /* LXCKVO.h */,
+				719CC11C2B981183002B408C /* LXCKVO.m */,
+				719CC11E2B9811E0002B408C /* LXCObservationInfo.h */,
+				719CC11F2B9811E0002B408C /* LXCObservationInfo.m */,
 				71ABEA272B95BA51005279AA /* Main.storyboard */,
 				71ABEA2A2B95BA54005279AA /* Assets.xcassets */,
 				71ABEA2C2B95BA54005279AA /* LaunchScreen.storyboard */,
@@ -76,6 +112,14 @@
 			path = OCDemo;
 			sourceTree = "<group>";
 		};
+		F89290BCF6F16EE754351C72 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D97AA605186DADF20EB9C9E /* Pods_OCDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +127,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 71ABEA342B95BA54005279AA /* Build configuration list for PBXNativeTarget "OCDemo" */;
 			buildPhases = (
+				B1F541B79EEFA0285FA81357 /* [CP] Check Pods Manifest.lock */,
 				71ABEA172B95BA51005279AA /* Sources */,
 				71ABEA182B95BA51005279AA /* Frameworks */,
 				71ABEA192B95BA51005279AA /* Resources */,
+				8A01E211FF3CFB86E5DD1BE4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -141,12 +187,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8A01E211FF3CFB86E5DD1BE4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OCDemo/Pods-OCDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OCDemo/Pods-OCDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OCDemo/Pods-OCDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1F541B79EEFA0285FA81357 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OCDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		71ABEA172B95BA51005279AA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				719CC1202B9811E0002B408C /* LXCObservationInfo.m in Sources */,
+				71A174D42B998B2D0019EB08 /* KVOBlockTestViewController.m in Sources */,
+				719CC1172B971F86002B408C /* Person.m in Sources */,
 				71ABEA262B95BA51005279AA /* ViewController.m in Sources */,
+				719CC11D2B981183002B408C /* LXCKVO.m in Sources */,
 				71ABEA202B95BA51005279AA /* AppDelegate.m in Sources */,
 				71ABEA312B95BA54005279AA /* main.m in Sources */,
 				71ABEA232B95BA51005279AA /* SceneDelegate.m in Sources */,
@@ -293,12 +385,15 @@
 		};
 		71ABEA352B95BA54005279AA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A6DD651096D0445A4B2CDAB /* Pods-OCDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LWJ6MASW42;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OCDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -306,6 +401,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -320,12 +416,15 @@
 		};
 		71ABEA362B95BA54005279AA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BF9251CE92E9D0B29F6E0EB /* Pods-OCDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LWJ6MASW42;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OCDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -333,6 +432,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

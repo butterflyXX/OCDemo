@@ -6,17 +6,66 @@
 //
 
 #import "ViewController.h"
+#import "Person.h"
+#import <objc/runtime.h>
+#import <malloc/malloc.h>
+#import "LXCKVO.h"
+#import "KVOBlockTestViewController.h"
 
-@interface ViewController ()
+@interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
+
+@property(nonatomic, strong) UITableView *tableView;
+
+@property(nonatomic, strong) NSArray *items;
 
 @end
+
+static NSString *cellId = @"cellId";
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.title = @"OCDemo";
+    UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+    tableView.backgroundColor=[UIColor whiteColor];
+    tableView.dataSource = self;
+    tableView.delegate = self;
+    [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:cellId];
+    tableView.frame = self.view.bounds;
+    
+    [self.view addSubview:tableView];
+    
+    __weak typeof(self) weakSelf = self;
+    self.items = @[
+                  @[@"自定义kvo_block",^(NSString *title){
+                      KVOBlockTestViewController *vc = [KVOBlockTestViewController new];
+                      vc.title = title;
+                      [weakSelf.navigationController pushViewController:vc animated:YES];
+                  }]
+                  ];
 }
+
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.items.count;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
+    cell.textLabel.text = self.items[indexPath.row][0];
+    return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    ((void(^)(NSString *))self.items[indexPath.row][1])(self.items[indexPath.row][0]);
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
 
 
 @end
