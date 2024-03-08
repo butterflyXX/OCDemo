@@ -12,12 +12,13 @@
 #import "LXCKVO.h"
 #import "KVOBlockTestViewController.h"
 #import "AFNTestViewController.h"
+#import "HomeItemModel.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property(nonatomic, strong) UITableView *tableView;
 
-@property(nonatomic, strong) NSArray *items;
+@property(nonatomic, strong) NSArray<HomeItemModel *> *items;
 
 @end
 
@@ -40,17 +41,17 @@ static NSString *cellId = @"cellId";
     
     __weak typeof(self) weakSelf = self;
     self.items = @[
-                  @[@"自定义kvo_block",^(NSString *title) {
-                      KVOBlockTestViewController *vc = [KVOBlockTestViewController new];
-                      vc.title = title;
-                      [weakSelf.navigationController pushViewController:vc animated:YES];
-                  }],
-                  @[@"ANF",^(NSString *title) {
-                      AFNTestViewController *vc = [AFNTestViewController new];
-                      vc.title = title;
-                      [weakSelf.navigationController pushViewController:vc animated:YES];
-                  }],
-                  ];
+        [HomeItemModel ModelWithTitle:@"自定义kvo_block" block:^(NSString *title) {
+            KVOBlockTestViewController *vc = [KVOBlockTestViewController new];
+            vc.title = title;
+            [weakSelf.navigationController pushViewController:vc animated:YES];
+        }],
+        [HomeItemModel ModelWithTitle:@"ANF" block:^(NSString *title) {
+            AFNTestViewController *vc = [AFNTestViewController new];
+            vc.title = title;
+            [weakSelf.navigationController pushViewController:vc animated:YES];
+        }]
+    ];
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -63,12 +64,12 @@ static NSString *cellId = @"cellId";
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
-    cell.textLabel.text = self.items[indexPath.row][0];
+    cell.textLabel.text = self.items[indexPath.row].title;
     return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    ((void(^)(NSString *))self.items[indexPath.row][1])(self.items[indexPath.row][0]);
+    self.items[indexPath.row].block(self.items[indexPath.row].title);
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 

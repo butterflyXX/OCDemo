@@ -13,6 +13,7 @@
 		719CC1202B9811E0002B408C /* LXCObservationInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 719CC11F2B9811E0002B408C /* LXCObservationInfo.m */; };
 		71A174D42B998B2D0019EB08 /* KVOBlockTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A174D32B998B2D0019EB08 /* KVOBlockTestViewController.m */; };
 		71A174D72B99995D0019EB08 /* AFNTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A174D62B99995D0019EB08 /* AFNTestViewController.m */; };
+		71A174DA2B9AE92F0019EB08 /* HomeItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A174D92B9AE92F0019EB08 /* HomeItemModel.m */; };
 		71ABEA202B95BA51005279AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ABEA1F2B95BA51005279AA /* AppDelegate.m */; };
 		71ABEA232B95BA51005279AA /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ABEA222B95BA51005279AA /* SceneDelegate.m */; };
 		71ABEA262B95BA51005279AA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ABEA252B95BA51005279AA /* ViewController.m */; };
@@ -34,6 +35,8 @@
 		71A174D32B998B2D0019EB08 /* KVOBlockTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOBlockTestViewController.m; sourceTree = "<group>"; };
 		71A174D52B99995D0019EB08 /* AFNTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFNTestViewController.h; sourceTree = "<group>"; };
 		71A174D62B99995D0019EB08 /* AFNTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFNTestViewController.m; sourceTree = "<group>"; };
+		71A174D82B9AE92F0019EB08 /* HomeItemModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeItemModel.h; sourceTree = "<group>"; };
+		71A174D92B9AE92F0019EB08 /* HomeItemModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeItemModel.m; sourceTree = "<group>"; };
 		71ABEA1B2B95BA51005279AA /* OCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71ABEA1E2B95BA51005279AA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		71ABEA1F2B95BA51005279AA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -98,6 +101,8 @@
 				71ABEA222B95BA51005279AA /* SceneDelegate.m */,
 				71ABEA242B95BA51005279AA /* ViewController.h */,
 				71ABEA252B95BA51005279AA /* ViewController.m */,
+				71A174D82B9AE92F0019EB08 /* HomeItemModel.h */,
+				71A174D92B9AE92F0019EB08 /* HomeItemModel.m */,
 				71A174D22B998B2D0019EB08 /* KVOBlockTestViewController.h */,
 				71A174D32B998B2D0019EB08 /* KVOBlockTestViewController.m */,
 				71A174D52B99995D0019EB08 /* AFNTestViewController.h */,
@@ -244,6 +249,7 @@
 				719CC1172B971F86002B408C /* Person.m in Sources */,
 				71ABEA262B95BA51005279AA /* ViewController.m in Sources */,
 				719CC11D2B981183002B408C /* LXCKVO.m in Sources */,
+				71A174DA2B9AE92F0019EB08 /* HomeItemModel.m in Sources */,
 				71ABEA202B95BA51005279AA /* AppDelegate.m in Sources */,
 				71ABEA312B95BA54005279AA /* main.m in Sources */,
 				71ABEA232B95BA51005279AA /* SceneDelegate.m in Sources */,
