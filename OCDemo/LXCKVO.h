@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)lxc_addObserver:(NSObject *)observer forKey:(NSString *)key boolBlock:(AddObserverBoolBlock)block;
 - (void)lxc_addObserver:(NSObject *)observer forKey:(NSString *)key block:(AddObserverBlock)block;
+-(void)lxc_removeObserver:(NSObject *)observer forKey:(NSString *)key;
 
 @end
 

@@ -11,6 +11,7 @@
 #import <malloc/malloc.h>
 #import "LXCKVO.h"
 #import "KVOBlockTestViewController.h"
+#import "AFNTestViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -39,11 +40,16 @@ static NSString *cellId = @"cellId";
     
     __weak typeof(self) weakSelf = self;
     self.items = @[
-                  @[@"自定义kvo_block",^(NSString *title){
+                  @[@"自定义kvo_block",^(NSString *title) {
                       KVOBlockTestViewController *vc = [KVOBlockTestViewController new];
                       vc.title = title;
                       [weakSelf.navigationController pushViewController:vc animated:YES];
-                  }]
+                  }],
+                  @[@"ANF",^(NSString *title) {
+                      AFNTestViewController *vc = [AFNTestViewController new];
+                      vc.title = title;
+                      [weakSelf.navigationController pushViewController:vc animated:YES];
+                  }],
                   ];
 }
 

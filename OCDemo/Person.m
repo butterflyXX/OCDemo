@@ -9,4 +9,8 @@
 
 @implementation Person
 
+-(void)dealloc {
+    NSLog(@"Person 释放了");
+}
+
 @end

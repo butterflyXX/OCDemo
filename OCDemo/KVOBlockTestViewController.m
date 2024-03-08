@@ -56,4 +56,11 @@
     self.p.passed = !self.p.passed;
 }
 
+-(void)dealloc {
+    [self.p lxc_removeObserver:self forKey:@"name"];
+    [self.p lxc_removeObserver:self forKey:@"age"];
+    [self.p lxc_removeObserver:self forKey:@"score"];
+    [self.p lxc_removeObserver:self forKey:@"passed"];
+}
+
 @end
